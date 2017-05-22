@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.pablo.admision.Usuario.InsertarUsuario"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="REGISTRO DE USUARIO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textAlignment="center"
+            tools:text="REGISTRO DE USUARIO"
+            android:textSize="18sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impRut">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etrut"
+                android:hint="RUT"
+                android:maxLength="9"
+                android:layout_marginTop="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impNombre">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etnombre"
+                android:hint="NOMBRE"
+                android:maxLength="25"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impApellidop">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etapellidop"
+                android:textAlignment="center"
+                android:hint="APELLIDO PATERNO"
+                android:maxLength="25"
+                android:layout_marginTop="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impApellidom">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etapellidom"
+                android:textAlignment="center"
+                android:hint="APELLODO MATERNO"
+                android:maxLength="25"
+                android:layout_marginTop="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impTelefono">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/ettelefono"
+                android:textAlignment="center"
+                android:hint="TELEFONO"
+                android:maxLength="9"
+                android:layout_marginTop="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impEmail">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etemail"
+                android:textAlignment="center"
+                android:hint="E-MAIL"
+                android:maxLength="35"
+                android:layout_marginTop="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impLiceo">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etliceo"
+                android:textAlignment="center"
+                android:hint="LICEO DE EGRESO"
+                android:maxLength="35"
+                android:layout_marginTop="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/impEgreso">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etegreso"
+                android:textAlignment="center"
+                android:hint="AÑO DE EGRESO"
+                android:maxLength="4"
+                android:layout_marginTop="20dp" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:text="Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bugusuario"
+            android:textAlignment="center"
+            android:elevation="0dp" />
+
+    </LinearLayout>
+</ScrollView>
